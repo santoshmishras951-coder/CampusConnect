@@ -1,0 +1,21 @@
+{
+  "entities": {
+    "ChatThread": {
+      "title": "ChatThread",
+      "description": "Represents an AI chat thread.",
+      "type": "object",
+      "properties": {
+        "threadId": { "type": "string", "description": "The OpenAI thread ID." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp." },
+        "userId": { "type": "string", "description": "ID of the user who owns this thread." }
+      },
+      "required": ["threadId", "createdAt", "userId"]
+    }
+  },
+  "firestore": {
+    "/chatThreads/{threadId}": {
+      "schema": "ChatThread",
+      "description": "Stores user's active chat thread IDs."
+    }
+  }
+}

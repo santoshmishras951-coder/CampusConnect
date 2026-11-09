@@ -1,0 +1,6 @@
+{
+  "name": "CampusConnect",
+  "description": "CampusConnect - Unified campus management web application for students, faculty, wardens, maintenance staff and administrators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
